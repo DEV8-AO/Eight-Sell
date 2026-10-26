@@ -1,0 +1,101 @@
+:root {
+  --font-title: "Outfit", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --laranja-principal: #ff6103;
+  --laranja-intenso: #fe5a0d;
+  --amarelo-dourado: #fdbe4c;
+  --preto-carvao: #101110;
+  --branco-suave: #edecec;
+  --shadow:0px 0px 5px 0px var(--preto-carvao);
+  --time:0.5s;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--preto-carvao);
+}
+
+header{
+.logo{
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+  a{
+    text-decoration: none;
+    color: var(--preto-carvao);
+    transition-duration: var(--time);
+  }
+
+  a:hover{
+    transform: scale(1.1);
+    transition-duration: var(--time);
+  }
+
+  .img-1{
+    height: 100px;
+
+    border-radius: 10px;
+    transition-duration: var(--time);
+  }
+
+  .img-1:hover{
+    transform: scale(1.1);
+    transition-duration: var(--time);
+  }
+
+  .link{
+  background-color: var(--laranja-intenso);
+  display: flex;
+  gap: 30px;
+  padding: 25px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-left: 55%;
+  height: 80px;
+  }
+}
+
+.home{
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  background-color: var(--branco-suave);
+  
+
+ 
+  .Title-1{
+    color: var(--laranja-principal);
+    font-family: var(--font-title);
+    font-size: 40px;
+    padding-top:20px;
+    padding-bottom:20px;
+    text-align: center;
+
+  }
+
+  .produtos{
+    margin-bottom: 30px;
+    height: 540px;
+    width: 80%;
+    box-shadow: var(--shadow);
+  }
+
+  .Name-1{
+    height: 15%;
+    box-shadow: var(--shadow);
+  }
+
+    .Title-2{
+    color: var(--amarelo-dourado);
+    font-family: var(--font-title);
+    font-size: 35px;
+    padding-top:20px;
+    padding-bottom:20px;
+    text-align: center;
+
+  }
+
+}

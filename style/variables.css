@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+:root {
+  --font-title: "Outfit", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --laranja-principal: #ff6103;
+  --laranja-intenso: #fe5a0d;
+  --amarelo-dourado: #fdbe4c;
+  --preto-carvao: #101110;
+  --branco-suave: #edecec;
+}
