@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #101110;
+    color: #edecec;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+.cabecalho {
+    min-height: 65px;
+    padding: 12px 8%;
+    border-bottom: 1px solid #292929;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+.logo-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #202020;
+    border: 1px solid #414141;
+    border-radius: 9px;
+   color: #ff6103;
+    font-weight: bold;
+}
+
+.logo h2 {
+    font-size: 17px;
+    white-space: nowrap;
+}
+
+.logo h2 span {
+   color: #ff6103;
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navegacao a,
+.conta {
+    color: #bcbcbc;
+    text-decoration: none;
+    font-size: 12px;
+    transition: color 0.3s;
+}
+
+.navegacao a:hover,.conta:hover {
+   color: #ff6103;
+}
+
+.navegacao .ativo {
+   color: #ff6103;
+}
+
+.conta {
+    border-left: 1px solid #333;
+    padding-left: 18px;
+    white-space: nowrap;
+}
+
+
+.conteudo {
+    max-width: 1000px;
+    width: 90%;
+    margin: 45px auto 65px;
+    text-align: center;
+}
+
+.etiqueta {
+    display: inline-block;
+    padding: 7px 12px;
+    margin-bottom: 15px;
+    border: 1px solid #4a351f;
+    border-radius: 20px;
+    color: #e7bd81;
+    background-color: #1c1915;
+    font-size: 10px;
+}
+
+h1 {
+    
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.descricao {
+    max-width: 550px;
+    margin: 0 auto 30px;
+    color: #a4a4a4;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.produtos {
+    
+    display: flex;
+    gap: 22px;
+    max-width: 820px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+.cartao {
+    min-width: 0;
+    padding: 20px;
+    background-color: #191919;
+border: 1px solid #303030;
+    border-radius: 12px;
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.cartao:hover {
+    border-color: #5a3a25;
+    transform: translateY(-3px);
+}
+
+.detalhes-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.categoria {
+    padding: 5px 7px;
+    border-radius: 4px;
+
+    background-color: #282019;
+    color: #f3a05c;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.avaliacao {
+    color: #e5c18b;
+    font-size: 10px;
+}
+
+.cartao h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.texto-produto {
+    min-height: 42px;
+    margin-bottom: 15px;
+
+    color: #b4b4b4;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.imagem-produto {
+    position: relative;
+    height: 190px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #252525;
+}
+
+.imagem-produto img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.legenda {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 10px 10px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+    color: white;
+    font-size: 10px;
+}
+
+
+.botoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.botao {
+    flex: 1;
+    min-width: 0;
+    padding: 12px 8px;
+    border-radius: 7px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.info {
+    color: #eeeeee;
+    background-color: #111111;
+    border: 1px solid #343434;
+}
+
+.info:hover {
+    background-color: #292929;
+}
+
+.comprar {
+    color: #111111;
+    background-color: #ff650d;
+   border: 1px solid #ff650d;
+}
+
+.comprar:hover {
+    background-color: #ff833c;
+}
+
+.rodape {
+    min-height: 75px;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    border-top: 1px solid #292929;
+}
+
+.logo-footer .logo-icon {
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+}
+
+.logo-footer h2 {
+    font-size: 13px;
+}
+
+.rodape p,.links-rodape a {
+    color: #929292;
+    font-size: 10px;
+}
+
+.links-rodape {
+    display: flex;
+    gap: 15px;
+}
+
+.links-rodape a {
+    text-decoration: none;
+}
+
+.links-rodape a:hover {
+    color: #ff650d;
+}
+
