@@ -10,6 +10,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     min-height: 100vh;
 }
+
 .cabecalho {
     min-height: 65px;
     padding: 12px 8%;
@@ -67,13 +68,6 @@ body {
 .navegacao .ativo {
    color: #ff6103;
 }
-
-.conta {
-    border-left: 1px solid #333;
-    padding-left: 18px;
-    white-space: nowrap;
-}
-
 
 .conteudo {
     max-width: 1000px;
@@ -210,7 +204,7 @@ border: 1px solid #303030;
     border-radius: 7px;
     text-align: center;
     text-decoration: none;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s;
 }

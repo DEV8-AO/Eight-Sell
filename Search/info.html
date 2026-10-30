@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eight Sell</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Outfit:wght@700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style/info.css">
+    <link rel="shortcut icon" href="../assets/Favicon/favicon-32x32.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="logo">
+            <span class="logo-icon">8</span>
+            <h2>Eight <span>Sell</span></h2>
+        </div>
+
+        <nav class="navegacao">
+            <a href="sobre.html">Sobre</a>
+            <a href="produtos.html" class="ativo">Produtos</a>
+            <a href="">Contactos</a>
+            <a href="">Políticas</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="selector-panel">
+            <div>
+                <span class="selector-eyebrow">Seleção de Lançamento</span>
+                <h1 class="selector-title">Informações Detalhadas dos Produtos</h1>
+            </div>
+
+            <div class="selector-buttons">
+                <button id="tab-burger" onclick="switchProduct('burger')" class="tab-btn tab-active">
+                    <span>🍔 Eight Food</span>
+                </button>
+                <button id="tab-cookie" onclick="switchProduct('cookie')" class="tab-btn tab-inactive">
+                    <span>🍪 Adbolachas</span>
+                </button>
+            </div>
+        </div>
+
+        <div id="product-burger" class="product-section">
+
+            <div class="product-hero">
+                <div class="product-hero-info">
+                    <div class="badge-gold">
+                        <span>🔥 Lançamento Mais Vendido</span>
+                    </div>
+                    <h2 class="product-title">
+                        Eight Food
+                    </h2>
+                    <p class="product-description">
+                        Cada hambúrguer da Eight Food é preparado na hora com técnicas artesanais de grelha rápida,
+                        selando os sucos naturais da carne para entregar uma experiência sucinta, suculenta e
+                        inesquecível a cada dentada.
+                    </p>
+
+                    <div class="product-meta-row">
+                        <div>
+                            <span class="meta-label">Preço Especial</span>
+                            <span class="meta-price">4.500 Kz</span>
+                        </div>
+                        <div class="meta-divider"></div>
+                        <div>
+                            <span class="meta-label">Tempo de Preparo</span>
+                            <span class="meta-value">15-20 min</span>
+                        </div>
+                    </div>
+
+                    <div style="padding-top: 16px;">
+                        <button class="btn-primary">
+                            <a href="buy.html" style="text-decoration: none; color: black;"><span>Comprar
+                                    Agora</span></a>
+                            <svg xmlns="http://www.w3.org/2000/svg" style="width: 20px; height: 20px; margin-left: 8px;"
+                                viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-hero-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=80"
+                        alt="Eight Food Burger">
+                    <div class="img-gradient-overlay"></div>
+                </div>
+            </div>
+
+            <div class="section-group">
+                <div class="section-header-top">
+                    <span class="section-tag-orange">Qualidade Sem Atalhos</span>
+                    <h3 class="section-main-title">Como é Preparado O Teu Hambúrguer</h3>
+                </div>
+
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">01</div>
+                        <h4 class="step-title">Seleção & Blend Exclusivo</h4>
+                        <p class="step-desc">
+                            Utilizamos 100% carne bovina selecionada diariamente, moída no ponto exato para manter a
+                            suculência sem adição de conservantes ou gorduras excessivas.
+                        </p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">02</div>
+                        <h4 class="step-title">Selagem na Chapa Quente</h4>
+                        <p class="step-desc">
+                            A carne é prensada na chapa em altíssima temperatura, criando uma crosta caramelizada rica
+                            em sabor enquanto o interior permanece macio.
+                        </p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">03</div>
+                        <h4 class="step-title">Montagem Brioche & Queijo</h4>
+                        <p class="step-desc">
+                            O queijo cheddar é derretido diretamente sobre a carne quentinha e selado em pão Brioche
+                            artesanal tostado na manteiga com o nosso molho secreto.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-group">
+                <div class="section-header-top">
+                    <span class="section-tag-orange" style="color: #FDBE4C;">Ingredientes Premium</span>
+                    <h3 class="section-main-title">O Que Faz O Sabor Ser Único</h3>
+                </div>
+
+                <div class="ingredients-grid">
+                    <div class="ingredient-card">
+                        <div class="ingredient-emoji">🥩</div>
+                        <div>
+                            <h5 class="ingredient-name">Carne 100% Bovina</h5>
+                            <p class="ingredient-desc">Blend fresco grelhado no ponto exato.</p>
+                        </div>
+                    </div>
+
+                    <div class="ingredient-card">
+                        <div class="ingredient-emoji">🧀</div>
+                        <div>
+                            <h5 class="ingredient-name">Cheddar Curado</h5>
+                            <p class="ingredient-desc">Derretimento ultra cremoso.</p>
+                        </div>
+                    </div>
+
+                    <div class="ingredient-card">
+                        <div class="ingredient-emoji">🍞</div>
+                        <div>
+                            <h5 class="ingredient-name">Pão Brioche</h5>
+                            <p class="ingredient-desc">Leve, amanteigado e sempre fresco.</p>
+                        </div>
+                    </div>
+
+                    <div class="ingredient-card">
+                        <div class="ingredient-emoji">🥫</div>
+                        <div>
+                            <h5 class="ingredient-name">Molho Especial Eight</h5>
+                            <p class="ingredient-desc">Receita secreta artesanal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-box-product">
+                <div class="cta-box-content">
+                    <h3 class="cta-box-title">
+                        Ficou com Fome? Pede Já O Teu Eight Food!
+                    </h3>
+                    <p class="cta-box-desc">
+                        Entregas ultra rápidas direto para a tua morada, quente e pronto a comer.
+                    </p>
+                </div>
+                <div>
+                    <button class="btn-primary" style="padding: 0 40px;">
+                        <a href="buy.html" style="text-decoration: none; color: black;"> <span>Comprar Agora. 4.500
+                                Kz</span></a>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="product-cookie" class="product-section hidden">
+
+            <div class="product-hero">
+                <div class="product-hero-info">
+                    <div class="badge-gold">
+                        <span>🍪 Receita Exclusiva Gourmet</span>
+                    </div>
+                    <h2 class="product-title">
+                        Adbolachas — Crocantes & Cremosas
+                    </h2>
+                    <p class="product-description">
+                        As Adbolachas são feitas à mão com pepitas gigantes de chocolate nobre que derretem na boca.
+                        Crocantes por fora, macias por dentro e com o equilíbrio perfeito de doçura.
+                    </p>
+
+                    <div class="product-meta-row">
+                        <div>
+                            <span class="meta-label">Embalagem de 6 Unidades</span>
+                            <span class="meta-price">2.200 Kz</span>
+                        </div>
+                        <div class="meta-divider"></div>
+                        <div>
+                            <span class="meta-label">Cozedura</span>
+                            <span class="meta-value">Fresco do Dia</span>
+                        </div>
+                    </div>
+
+                    <div style="padding-top: 16px;">
+                        <button class="btn-primary">
+                            <a href="buy.html" style="text-decoration: none; color: black;"> <span>Comprar
+                                    Agora</span></a>
+                            <svg xmlns="http://www.w3.org/2000/svg" style="width: 20px; height: 20px; margin-left: 8px;"
+                                viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-hero-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=1000&q=80"
+                        alt="Adbolachas Artisanal Cookies">
+                    <div class="img-gradient-overlay"></div>
+                </div>
+            </div>
+
+            <div class="section-group">
+                <div class="section-header-top">
+                    <span class="section-tag-orange">Arte Pastelaria</span>
+                    <h3 class="section-main-title">Como Prepararmos As Adbolachas</h3>
+                </div>
+
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">01</div>
+                        <h4 class="step-title">Massa Com Manteiga Real</h4>
+                        <p class="step-desc">
+                            Misturamos manteiga de alta qualidade com açúcares selecionados até obter uma textura
+                            aveludada e aroma irresistível.
+                        </p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">02</div>
+                        <h4 class="step-title">Pepitas de Chocolate Nobre</h4>
+                        <p class="step-desc">
+                            Incorporamos generosas porções de chocolate meio amargo 60% e chocolate ao leite, garantindo
+                            o contraste ideal.
+                        </p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">03</div>
+                        <h4 class="step-title">Cozedura Precisa</h4>
+                        <p class="step-desc">
+                            Assadas no forno à temperatura ideal para manter a borda crocante e o centro macio e
+                            cremoso.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-group">
+                <div class="section-header-top">
+                    <span class="section-tag-orange" style="color: #FDBE4C;">Ingredientes de Origem</span>
+                    <h3 class="section-main-title">Qualidade em Cada Detalhe</h3>
+                </div>
+
+                <div class="ingredients-grid">
+                    <div class="ingredient-card">
+                        <div class="ingredient-emoji">🍫</div>
+                        <div>
+                            <h5 class="ingredient-name">Chocolate Nobre 60%</h5>
+                            <p class="ingredient-desc">Sem gorduras hidrogenadas.</p>
+                        </div>
+                    </div>
+
+                    <div class="ingredient-card">
+                        <div class="ingredient-emoji">🧈</div>
+                        <div>
+                            <h5 class="ingredient-name">Manteiga Cremosa</h5>
+                            <p class="ingredient-desc">Sabor rico e amanteigado.</p>
+                        </div>
+                    </div>
+
+                    <div class="ingredient-card">
+                        <div class="ingredient-emoji">🌾</div>
+                        <div>
+                            <h5 class="ingredient-name">Farinha Pura</h5>
+                            <p class="ingredient-desc">Peneirada para textura perfeita.</p>
+                        </div>
+                    </div>
+
+                    <div class="ingredient-card">
+                        <div class="ingredient-emoji" style="font-size: 11px;">VNL</div>
+                        <div>
+                            <h5 class="ingredient-name">Extrato de Baunilha</h5>
+                            <p class="ingredient-desc">Aroma natural irresistível.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-box-product">
+                <div class="cta-box-content">
+                    <h3 class="cta-box-title">
+                        Adoça O Teu Dia Com As Adbolachas!
+                    </h3>
+                    <p class="cta-box-desc">
+                        Caixa com 6 unidades recém-saídas do forno, embaladas com todo o cuidado.
+                    </p>
+                </div>
+                <div>
+                    <button class="btn-primary" style="padding: 0 40px;">
+                        <a href="buy.html" style="text-decoration: none; color: black;"><span>Comprar Agora. 2.200
+                                Kz</span></a>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="rodape">
+
+        <div class="logo logo-footer">
+            <span class="logo-icon">8</span>
+            <h2>Eight <span>Sell</span></h2>
+        </div>
+
+        <p>© 2026 Eight Sell Marketplace. Todos os direitos reservados.</p>
+
+        <div class="links-rodape">
+            <a href="">Termos</a>
+            <a href="">Privacidade</a>
+            <a href="">Ajuda</a>
+        </div>
+
+    </footer>
+
+    <script src="../scripts/info.js">
+    </script>
+
+</body>
+
+</html>

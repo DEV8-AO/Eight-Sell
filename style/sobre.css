@@ -141,20 +141,6 @@ body {
     color: #EDECEC;
 }
 
-.conta {
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: rgba(238, 236, 236, 0.7);
-    text-decoration: none;
-    transition: color 0.2s;
-}
-
-.conta:hover {
-    color: #FF6103;
-}
-
 .hero-section {
     position: relative;
     padding: 64px 24px;
