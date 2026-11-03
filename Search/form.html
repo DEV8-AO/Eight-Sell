@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"> 
+
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   background-color: black;
+   
+}
+
+form{
+ flex-direction: column;
+ display: flex;
+ padding: 15px;
+ height: 100%;
+ background-color: white;
+ border-radius: 10px;
+}
+ h1{
+    text-transform:uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+    color:crimson;
+}
+p{
+    text-align: center;
+    margin: 5px;
+  
+} 
+.card{
+     display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 370px;
+    margin: 15px 0;
+    color:black;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.card::before{
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color:black;
+}
+.card::after{
+     content: "";
+    
+    flex: 1;
+    height: 1px;
+    background-color:black;
+}
+
+button{
+    background-color: crimson;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    color: white;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #c90035;
+    transform: translateY(-2px);
+    transition: 0.3s;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 70px;
+    padding: 10px;  
+    margin-bottom: 10px;
+}
+.btn img{
+     width: 30px;
+    height: 30px;
+    cursor: pointer;
+   
+}
+.menu {
+    position: relative;
+    width: 100%;
+    margin: 12px 0;  
+}
+
+.menu input {
+    width: 100%;
+    height: 50px;
+    padding: 10px ;
+    box-sizing: border-box;
+}
+
+.menu i {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    font-size: 18px;
+}
+
+    </style>
+</head>
+<body>
+    <div>
+        
+        <form action="">
+           <h1>Login</h1>
+           <label for="nome">Nome</label>
+           <div class="menu">
+            <input type="text" placeholder="Digite o seu nome" required minlength="10" maxlength="20">
+            <i class="fa-solid fa-user"></i>
+           </div>
+            <label for="nome">Email</label>
+            <div class="menu">
+                <input type="email" placeholder="Digite o seu email" required minlength="10" maxlength="20">
+            <i class="fa-solid fa-at"></i>
+        </div>
+            <label for="password">Password</label>
+            <div class="menu">
+            <input type="password" placeholder="Digite a sua password" required minlength="10" maxlength="20">
+            <i class="fa-solid fa-lock"></i>
+            </div>
+           <p> <input type="checkbox">I have agree to the Terms & conditions</p>
+           <button>Sign in</button>
+           <div class="card">
+             <span>or sign up</span>
+           </div>
+           
+           <div class="btn">
+           <img src="https://cdn.simpleicons.org/apple/000000" alt="Apple">
+            <img src="https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png" alt="">
+              <img src="https://cdn.simpleicons.org/facebook/0866FF" alt="Facebook">
+
+        </div>
+           
+            <p>Don't have an account yet? <a href="#">Criar Conta</a></p>
+          
+
+        </form>
+       
+    </div>
+</body>
+</html>

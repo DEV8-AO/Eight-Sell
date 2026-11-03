@@ -21,20 +21,19 @@
 body {
     background-color: var(--preto-carvao);
     color: var(--branco-suave);
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
     font-family: var(--font2);
-    height: 90vh;
-    background: url(../assets/img/fundo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 100vh;
+    background-image:
+    radial-gradient(circle at 15% 20%, rgba(255, 97, 3, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 85% 80%, rgba(253, 190, 76, 0.04) 0%, transparent 45%),
+    linear-gradient(135deg, #101110 0%, #1A1B1A 100%);
 }
 
 .header {
     display: flex;
-    padding: 50px;
-
+    padding: 10px;
+    user-select: none;
 
     nav {
         padding: 20px;
@@ -43,6 +42,9 @@ body {
         background-color: #fdbf4c3a;
         margin-left: 90%;
         border-radius: 12px;
+        margin-top: 5vh;
+        opacity: 0.7;
+        transition-duration: 0.5s;
 
         .link {
             text-decoration: none;
@@ -59,17 +61,53 @@ body {
 
     }
 
+    nav:hover {
+        transform: translateY(-5px);
+        opacity: 1;
+        transition-duration: 0.5s;
+    }
+
 }
 
-.BV {
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    height: 90vh;
-    align-items: center;
-}
+.containr {
+    height: 85vh;
+    border: 1px solid rgba(255, 255, 255, 0);
+    user-select: none;
 
-.destaq {
-    color: var(--laranja-intenso);
-    opacity: 0.8;
+    .box {
+        display: flex;
+        margin-top: 5vh;
+        margin-left: 40vh;
+
+        .logo {
+            color: var(--laranja-intenso);
+            font-size: 600px;
+            font-weight: 400;
+            opacity: 0.8;
+        }
+
+        .linha {
+            border: 1px solid var(--branco-suave);
+            height: 35vh;
+            margin-left: 3vw;
+            margin-top: 17vh;
+        }
+
+        h1 {
+            font-size: 150px;
+            margin-top: 18vh;
+            margin-left: 2vw;
+
+        }
+
+        span {
+            color: var(--laranja-intenso);
+        }
+
+        h2 {
+            margin-left: -33vw;
+            margin-top: 40vh;
+            font-size: 30px;
+        }
+    }
 }
