@@ -32,12 +32,10 @@ body {
 
 .header {
     display: flex;
-    padding: 10px;
     user-select: none;
-
     nav {
-        padding: 20px;
-        font-size: 25px;
+        padding: 15px;
+        font-size: 15px;
         border: 1px solid var(--amarelo-dourado);
         background-color: #fdbf4c3a;
         margin-left: 90%;
@@ -70,25 +68,25 @@ body {
 }
 
 .containr {
-    height: 85vh;
+    height: 80vh;
     border: 1px solid rgba(255, 255, 255, 0);
     user-select: none;
 
     .box {
         display: flex;
-        margin-top: 5vh;
-        margin-left: 40vh;
-
+        margin-left: 19vh;
+        height: 84vh;
+        width: 90vw;
         .logo {
             color: var(--laranja-intenso);
-            font-size: 600px;
+            font-size: 400px;
             font-weight: 400;
             opacity: 0.8;
         }
 
         .linha {
             border: 1px solid var(--branco-suave);
-            height: 35vh;
+            height: 40vh;
             margin-left: 3vw;
             margin-top: 17vh;
         }
@@ -105,8 +103,8 @@ body {
         }
 
         h2 {
-            margin-left: -33vw;
-            margin-top: 40vh;
+            margin-left: -49.9vw;
+            margin-top: 48vh;
             font-size: 30px;
         }
     }
