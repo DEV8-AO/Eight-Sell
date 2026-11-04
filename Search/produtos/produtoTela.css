@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: antiquewhite;
+    user-select: none;
+}
+
+/*Miguel Brincou aqui também*/
+
+:root {
+    --font: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    --font2: "Fira Sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+
+    --preto-carvao: #101110;
+    --branco-suave: #edecec;
+    --laranja-principal: #ff6103;
+    --laranja-intenso: #fe5a0d;
+    --amarelo-dourado: #fdbe4c;
+
+    --superficie-card: #1a1b1a;
+    --texto-secundario: rgba(237, 236, 236, 0.7);
+    --radius-padrao: 12px;
+    --altura-input-btn: 48px;
+
+    --box-shadow: 0px 0px 2px 0px var(--branco-suave);
+    --border: 12px;
+}
+
+body {
+    background-color: var(--preto-carvao);
+    color: var(--branco-suave);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: var(--font);
+    user-select: none;
+    background-image:
+        radial-gradient(circle at 15% 20%, rgba(255, 97, 3, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 85% 80%, rgba(253, 190, 76, 0.04) 0%, transparent 45%),
+        linear-gradient(135deg, #101110 0%, #1A1B1A 100%);
+}
+
+.header {
+    display: flex;
+    padding: 8px;
+    box-shadow: 0px 0px 5px 0px #ff6103;
+    backdrop-filter: blur(30px);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+
+    .logo {
+        font-size: 30px;
+        margin: 10px;
+        user-select: none;
+        width: 15%;
+
+        .eight {
+            color: black;
+            font-size: 30px;
+            background-color: var(--laranja-intenso);
+            padding: 5px;
+            border-radius: var(--border);
+        }
+    }
+
+    nav {
+        display: flex;
+        justify-content: end;
+        width: 90%;
+        gap: 50px;
+        padding: 20px;
+        font-size: 25px;
+
+        .link {
+            text-decoration: none;
+            color: var(--branco-suave);
+            transition-duration: 0.5s;
+            opacity: 0.5;
+        }
+
+        .link:hover {
+            transform: scale(1.1);
+            transition-duration: 0.5s;
+            color: var(--laranja-intenso);
+            opacity: 1;
+        }
+
+        .ativo {
+            color: var(--laranja-intenso);
+        }
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer {
+    width: 95.7%;
+    background-color: #1A1B1A;
+    border-top: 1px solid #ff6103;
+    padding: 32px;
+    text-align: center;
+    font-family: var(--font)
+}
+
+/*Miguel Brincou aqui também*/
+
+.sectionImagem {
+    background-image: url(Backbackground.jpeg);
+    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 94.7%;
+    min-height: 400px;
+    height: 60vh;
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    gap: 12px;
+
+
+    .texto {
+
+        max-width: 450px;
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 98px;
+    }
+
+    p {
+        color: white;
+        font-size: 32px;
+        margin: 0;
+        line-height: 1.2;
+    }
+
+    span {
+        color: #fe5a0d;
+        font-size: 55px;
+        font-weight: bold;
+    }
+
+    button {
+        width: fit-content;
+        width: auto;
+        max-width: 200px;
+        padding: 12px 30px;
+        align-self: flex-start;
+        margin-top: 15px;
+    }
+}
+
+.OsProdutos {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 15px;
+
+    img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+        margin: 0 auto 15px auto;
+        display: block;
+        border-radius: 12px;
+
+    }
+
+    article {
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        background-color: #10111031;
+
+    }
+
+}
+
+.sectionInformacao {
+    display: flex;
+    justify-content: space-around;
+    gap: 24px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 20px;
+
+
+    article {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+    }
+
+    img {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        object-position: center;
+        object-fit: cover;
+
+    }
+
+    span {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 0;
+    }
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.5;
+}
+
+.sectionTelaprodutos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 30px 20px;
+
+    .descricao {
+        font-size: 12px;
+        padding: 12px;
+    }
+
+    .cardsProduto {
+        background: #1a1a1a;
+        display: flex;
+        background-color: #fe590d00;
+        border: 1px solid #fe590d5b;
+        border-radius: 10px;
+        padding: 15px;
+        width: 250px;
+        text-align: center;
+        align-items: center;
+    }
+
+    button {
+        border-radius: 10px;
+    }
+
+    .btnProdutos {
+        display: flex;
+        flex-direction: row;
+        gap: 14px;
+    }
+
+    .btnInformacao {
+        background-color: #a3380715;
+        border: 1px solid #fe5f0373;
+    }
+}
+
+button {
+    background-color: #fe6103;
+    border: none;
+    border-radius: 40px;
+    padding: 8px;
+    transition: 0.5;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fe5f0363;
+}
+
+h1 {
+    color: #fe5a0d;
+    font-size: 50px;
+}
+
+h2 {
+    color: #fe5a0d;
+}
+
+html {
+    scroll-behavior: smooth;
+}

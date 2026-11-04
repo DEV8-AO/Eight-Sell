@@ -36,6 +36,11 @@ body {
   flex-direction: column;
   justify-content: space-between;
   font-family: var(--font);
+  user-select: none;
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(255, 97, 3, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 85% 80%, rgba(253, 190, 76, 0.04) 0%, transparent 45%),
+    linear-gradient(135deg, #101110 0%, #1A1B1A 100%);
 }
 
 .header {
@@ -48,15 +53,16 @@ body {
   z-index: 50;
 
   .logo {
-    font-size: 20px;
+    font-size: 30px;
     margin: 10px;
     user-select: none;
+    width: 15%;
 
     .eight {
       color: black;
       font-size: 30px;
       background-color: var(--laranja-intenso);
-      padding: 10px;
+      padding: 5px;
       border-radius: var(--border);
     }
   }
@@ -117,7 +123,7 @@ main {
   .BV {
     margin-top: 30px;
     text-align: center;
-    width: 50vw;
+    width: 60vw;
     height: 20vh;
     font-family: var(--font2);
     font-size: 20px;
@@ -182,9 +188,9 @@ main {
     .info-4 {
       padding: 25px;
       position: relative;
-      top: -15.8vh;
       background-color: var(--superficie-card);
       border-radius: 10px;
+      margin-top: -157px;
     }
 
     .EightFood:hover,
@@ -268,13 +274,14 @@ main {
       margin-top: 10vh;
       display: flex;
       justify-content: center;
+      height: 30vh;
     }
 
     .box {
       text-align: center;
       background-color: #1a1b1a;
       width: 83vw;
-      height: 26vh;
+      height: 30vh;
       border-radius: var(--border);
       box-shadow: var(--box-shadow);
 
@@ -301,8 +308,6 @@ main {
         transition-duration: 0.5s;
       }
     }
-
-
   }
 }
 
